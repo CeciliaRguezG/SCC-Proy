@@ -2,7 +2,7 @@
     CodeFile="Cliente.aspx.cs" Inherits="Cliente_Cliente" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
-   <meta charset='utf-8'>
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../Styles/Estilo.css" rel="stylesheet" type="text/css" />
@@ -17,7 +17,6 @@
     <script src="../js/DataTable.js" type="text/javascript"></script>
     <script src="../js/dataTable-es.js" type="text/javascript"></script>
     <script src="../js/jquery.dataTables.min.js" type="text/javascript"></script>
-    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <div>
@@ -33,7 +32,7 @@
                     </li>
                     <li><a href='#'>Créditos</a>
                         <ul>
-                            <li><a href='#'>Solicitudes</a>
+                            <li><a href="../Credito/Solicitud.aspx">Solicitudes</a>
                                 <ul>
                                     <li><a href='#'>Aceptadas</a></li>
                                     <li><a href='#'>Rechazadas</a></li>
@@ -48,28 +47,12 @@
                         </ul>
                     </li>
                     <li><a href='#'>Contactos</a></li>
-                    <li><a href='#' id="dialog-link" class="ui-state-default ui-corner-all"><span class="ui-icon-calculator">
+                    <li><a href="#" id="dialog-link" class="ui-state-default ui-corner-all"><span class="ui-icon-calculator">
                     </span>Calculadora</a></span></a></li>
                 </ul>
             </div>
             <table style="width: 100%;">
                 <br />
-                <tr>
-                    <td align="right">
-                        Buscar:
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txt_Nombre" runat="server" MaxLength="50" CssClass="form-control"
-                            Width="149px" Height="20px"></asp:TextBox>
-                        <asp:Label ID="lblNombre" runat="server" ></asp:Label>
-                        <asp:Button ID="btn_Buscar" runat="server" OnClick="btn_Buscar_Click" Text="Buscar"
-                            CssClass="btn btn-default" />
-                            <br />
-                            <br />
-                    </td>
-                    <td class="style2">
-                    </td>
-                </tr>
                 <tr>
                     <td align="right">
                         Nombre:
@@ -162,7 +145,7 @@
                         Número:
                     </td>
                     <td>
-                        <asp:TextBox ID="txt_Num" runat="server" MaxLength="4" CssClass="form-control" Width="149px"
+                        <asp:TextBox ID="txt_Num" runat="server" MaxLength="5" CssClass="form-control" Width="149px"
                             Height="20px"></asp:TextBox>
                         <asp:Label ID="lblNum" runat="server" CssClass="colorMje"></asp:Label>
                     </td>
@@ -230,3 +213,4 @@
         </asp:Panel>
     </div>
 </asp:Content>
+
