@@ -1,5 +1,7 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage1.master" AutoEventWireup="true"
     CodeFile="ListaClientes.aspx.cs" Inherits="Cliente_ListaClientes" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage1.master" AutoEventWireup="true"
+    CodeFile="ListaClientes.aspx.cs" Inherits="Cliente_ListaClientes" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
     <meta charset='utf-8'>
@@ -47,7 +49,7 @@
                         </ul>
                     </li>
                     <li><a href='#'>Contactos</a></li>
-                    <li><a href='#' id="dialog-link" class="ui-state-default ui-corner-all"><span class="ui-icon-calculator">
+                    <li><a href="#" id="dialog-link" class="ui-state-default ui-corner-all"><span class="ui-icon-calculator">
                     </span>Calculadora</a></span></a></li>
                 </ul>
             </div>
