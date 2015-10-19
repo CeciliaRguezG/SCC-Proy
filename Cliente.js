@@ -11,6 +11,10 @@ var expMotivo = /^[\']*$/;
 var expNumerosLetras = /^[1-9]{1}[0-9]*^[a-bA-B]$/;
 
 $(document).ready(function () {
+
+
+
+
     function verListado() {
         $.ajax({
             url: "ListaClientes.aspx/ConstruirListado", //este es le metodo que se invoca del cSS
